@@ -1,13 +1,13 @@
 {
     "name": "pjbank-api-client",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "description": "PJBank API Client for NodeJS",
     "main": "lib/index.js",
     "scripts": {
-        "test": "test"
+        "test": "mocha ./tests/test.js"
     },
     "keywords": [
-        "PIBank",
+        "PJBank",
         "fintech",
         "api",
         "boleto",
@@ -15,9 +15,13 @@
         "contadigital"
     ],
     "author": "Matheus Fidelis",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "request": "^2.81.0",
         "request-promise": "^4.2.1"
+    },
+    "devDependencies": {
+        "mocha": "^5.2.0",
+        "unit.js": "^2.0.0"
     }
 }
